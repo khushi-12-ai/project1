@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
+#import plotly.graph_objects as go
+#from plotly.subplots import make_subplots
 
 # Page configuration
 st.set_page_config(
@@ -179,7 +179,7 @@ if st.button("⚡ Calculate Energy Consumption"):
         # Create data for visualization
         base_energy = cal_energy - appliance_energy
         
-        fig = go.Figure()
+st.bar_chart(your_dataframe_or_data)
         
         # Add base energy
         fig.add_trace(go.Bar(
