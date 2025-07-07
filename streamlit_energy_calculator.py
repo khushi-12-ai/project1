@@ -179,7 +179,7 @@ if st.button("⚡ Calculate Energy Consumption"):
         # Create data for visualization
         base_energy = cal_energy - appliance_energy
         
-st.bar_chart(your_dataframe_or_data)
+fig = go.Figure()
         
         # Add base energy
         fig.add_trace(go.Bar(
